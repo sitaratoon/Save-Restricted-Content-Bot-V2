@@ -1,4 +1,3 @@
-7861816619:AAFfJwY4He2yoIRiWOIa2-0vS5iTaBi41is
 # devgagan
 # Note if you are trying to deploy on vps then directly fill values in ("")
 
