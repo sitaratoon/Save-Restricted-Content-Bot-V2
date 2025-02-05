@@ -1,3 +1,4 @@
+
 # devgagan
 # Note if you are trying to deploy on vps then directly fill values in ("")
 
@@ -9,7 +10,7 @@ BOT_TOKEN = getenv("BOT_TOKEN", "")
 OWNER_ID = list(map(int, getenv("OWNER_ID", "6692613520").split()))
 MONGO_DB = getenv("MONGO_DB", "mongodb+srv://sitaratoons:sitaratoons@cluster0.98nq3.mongodb.net/?retryWrites=true&w=majority")
 LOG_GROUP = getenv("LOG_GROUP", "-1002393871481")
-CHANNEL_ID = int(getenv("CHANNEL_ID", "-1002276497875"))
+CHANNEL_ID = int(getenv("CHANNEL_ID", "-1002355394644"))
 FREEMIUM_LIMIT = int(getenv("FREEMIUM_LIMIT", "500"))
 PREMIUM_LIMIT = int(getenv("PREMIUM_LIMIT", "500"))
 WEBSITE_URL = getenv("WEBSITE_URL", "speedlinkurl.com")
