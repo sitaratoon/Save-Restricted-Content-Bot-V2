@@ -61,7 +61,7 @@ async def myplan(client, message):
         
         days = time_left.days
         hours, remainder = divmod(time_left.seconds, 3600)
-        minutes, seconds = divmod(remainder, 2)
+        minutes, seconds = divmod(remainder, 60)
             
         
         time_left_str = f"{days} ᴅᴀʏꜱ, {hours} ʜᴏᴜʀꜱ, {minutes} ᴍɪɴᴜᴛᴇꜱ"
@@ -88,7 +88,7 @@ async def get_premium(client, message):
             
             days = time_left.days
             hours, remainder = divmod(time_left.seconds, 3600)
-            minutes, seconds = divmod(remainder, 2)
+            minutes, seconds = divmod(remainder, 60)
             
             
             time_left_str = f"{days} days, {hours} hours, {minutes} minutes"
@@ -206,7 +206,7 @@ async def premium_remover():
 
                     days = time_left.days
                     hours, remainder = divmod(time_left.seconds, 3600)
-                    minutes, seconds = divmod(remainder, 2)
+                    minutes, seconds = divmod(remainder, 60)
 
                     if days > 0:
                         remaining_time = f"{days} days, {hours} hours, {minutes} minutes, {seconds} seconds"
