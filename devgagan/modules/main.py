@@ -165,7 +165,7 @@ async def process_special_links(userbot, user_id, msg, link):
     special_patterns = ['t.me/c/', 't.me/b/', '/s/', 'tg://openmessage']
     if any(sub in link for sub in special_patterns):
         await process_and_upload_link(userbot, user_id, msg.id, link, 0, msg)
-        await set_interval(user_id, interval_minutes=20)
+        await set_interval(user_id, interval_minutes=45)
         return
     await msg.edit_text("Invalid link...")
 
