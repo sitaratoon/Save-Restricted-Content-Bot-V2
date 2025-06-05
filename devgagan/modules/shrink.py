@@ -87,7 +87,7 @@ async def token_handler(client, message):
                 "Hi 👋 Welcome, Wanna intro...?\n\n"
                 "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
                 "✳️ Simply send the post link of a public channel. For private channels, do /login. Send /help to know more.\n\n"
-                "<b>⚠️ Don't Use Main Account For Private Post</b>"
+                "⚠️ 𝘿𝙤𝙣'𝙩 𝙐𝙨𝙚 𝙈𝙖𝙞𝙣 𝘼𝙘𝙘𝙤𝙪𝙣𝙩 𝙁𝙤𝙧 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 𝙋𝙤𝙨𝙩"
             ),
             reply_markup=keyboard
         )
