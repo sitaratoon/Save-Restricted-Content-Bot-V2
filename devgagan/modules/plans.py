@@ -61,7 +61,7 @@ async def myplan(client, message):
         
         days = time_left.days
         hours, remainder = divmod(time_left.seconds, 3600)
-        minutes, seconds = divmod(remainder, 60)
+        minutes, seconds = divmod(remainder, 2)
             
         
         time_left_str = f"{days} ᴅᴀʏꜱ, {hours} ʜᴏᴜʀꜱ, {minutes} ᴍɪɴᴜᴛᴇꜱ"
@@ -88,7 +88,7 @@ async def get_premium(client, message):
             
             days = time_left.days
             hours, remainder = divmod(time_left.seconds, 3600)
-            minutes, seconds = divmod(remainder, 60)
+            minutes, seconds = divmod(remainder, 2)
             
             
             time_left_str = f"{days} days, {hours} hours, {minutes} minutes"
