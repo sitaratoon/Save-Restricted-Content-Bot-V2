@@ -1,8 +1,11 @@
 FROM python:3.10-slim
 
+# Prevent interactive prompts during install
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install system dependencies
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y \
+    apt-get install -y --no-install-recommends \
         git \
         curl \
         wget \
@@ -16,14 +19,14 @@ RUN apt-get update && apt-get upgrade -y && \
 # Set working directory
 WORKDIR /app
 
-# Copy requirements first (for caching)
+# Copy requirements first
 COPY requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip wheel && \
     pip install --no-cache-dir -r requirements.txt
 
-# Copy rest of the project
+# Copy project files
 COPY . .
 
 # Expose port
